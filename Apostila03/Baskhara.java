@@ -16,8 +16,15 @@ public class Baskhara {
         if(delta < 0){
             System.out.print("Não há raízes");
         }else{
-            if(delta > 0){
-
+            if(delta == 0){
+                raiz1 = (-b*delta)/(2*a);
+                System.out.println("A somente uma raiz");
+                System.out.print("A raiz é: " + raiz1);
+            }else{
+                raiz1 = (-b*delta)/(2*a);
+                raiz2 = (-b*(-delta))/(2*a);
+                System.out.println("A duas raízes");
+                System.out.print("As raízes são: " + raiz1 + " e " + raiz2);
             }
         }
 
